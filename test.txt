@@ -1,0 +1,14 @@
+
+
+file = open('testing.txt','r')
+lines = f.readlines()
+
+@@
+lines[0].split('\n')[0]
+@@
+clean = [line.split('\n')[0] for line in lines]
+
+string = ''
+for line in clean:
+    string = string+line+' '
+
