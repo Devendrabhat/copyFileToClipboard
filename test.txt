@@ -13,6 +13,7 @@ os.system("echo {} | clip".format(string))
 
 # linux (ubuntu)
 apt-get install xclip
+https://stackoverflow.com/questions/5130968/how-can-i-copy-the-output-of-a-command-directly-into-my-clipboard
 
 ~/.bashrc
 alias clip='xclip -selection clipboard'
