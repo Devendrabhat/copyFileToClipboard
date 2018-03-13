@@ -21,3 +21,7 @@ alias cpaste='xclip -selection clipboard -o'
 
 Python command
 os.system("echo {} | clip".format(string))
+
+
+
+
