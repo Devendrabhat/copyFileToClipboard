@@ -10,11 +10,11 @@ import os
 
 
 # From link
-link = input("Enter the website link to find out mail ids => ")
-page = urlopen(link)
+# link = input("Enter the website link to find out mail ids => ")
+# page = urlopen(link)
 
 # From file
-#page = open('trial.txt', 'r')
+page = open('trial.txt', 'r')
 
 soup = bs(page, 'html.parser')
 mailids = set()
@@ -27,4 +27,4 @@ for line in mailids:
     string = string+line+' '
 print(string)
 os.system("echo {} | clip".format(string))
-
+print("Done, Now do ctrl+v somewhere.")

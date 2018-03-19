@@ -15,7 +15,12 @@ pip3 install bs4
 
 
 Running
-python
+
+python linkExtractor.py
+ Enter the link.
+
+
+
 
 
 
