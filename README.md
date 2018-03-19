@@ -9,7 +9,8 @@ Setup
 
         pip3 install --upgrade pip
         pip3 install -r requirements.txt
-OR
+
+    OR
 
         pip3 install bs4
 
@@ -18,30 +19,11 @@ Running
 
         python linkExtractor.py
  Enter the link.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+#.................................... 
+ 
 Code basic blocks
 
 file = open('testing.txt','r')
