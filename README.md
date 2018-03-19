@@ -6,17 +6,16 @@ Setup
 
 
 2) run this below command
-    pip3 install --upgrade pip
-    pip3 install -r requirements.txt
 
-        OR
-
-    pip3 install bs4
+        pip3 install --upgrade pip
+        pip3 install -r requirements.txt
+OR
+        pip3 install bs4
 
 
 Running
 
-    python linkExtractor.py
+        python linkExtractor.py
  Enter the link.
 
 
