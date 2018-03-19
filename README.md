@@ -1,4 +1,43 @@
 
+Setup
+1) To run the code properly make sure you have Python3 installed.
+apt-get update
+apt-get install python3 python3-pip
+
+
+2) run this below command
+pip3 install --upgrade pip
+pip3 install -r requirements.txt
+
+        OR
+
+pip3 install bs4
+
+
+Running
+python
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Code basic blocks
 
 file = open('testing.txt','r')
 lines = f.readlines()
