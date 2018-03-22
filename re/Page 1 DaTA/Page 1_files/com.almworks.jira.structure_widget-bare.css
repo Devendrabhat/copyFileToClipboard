@@ -1,0 +1,3970 @@
+/* module-key = 'com.almworks.jira.structure:widget-bare', location = 'css/structure/structure-widget.css' */
+.structureBorder {
+  background-color: #FFFFFF;
+  border-top: 1px solid #BBBBBB;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body.st-fixed-height .structureBorder {
+  border-bottom: 1px solid #BBBBBB;
+}
+
+#structure {
+  clear: both;
+  position: relative;
+  z-index: 10;
+}
+
+#structure, #structure input, #structure textarea {
+  font-family: arial, FreeSans, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+#structure .head {
+  overflow-y: visible;
+  position: relative;
+  padding: 5px 0;
+}
+
+.structureBorder #structure .head {
+  padding-left: 3px;
+}
+
+#structure .sechead {
+  border-bottom: 1px solid #bbb;
+  overflow-y: visible;
+  position: relative;
+}
+
+#structure .secbody {
+  position: relative;
+}
+
+#structure .foot {
+  border-top: 1px solid #bbb;
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: relative;
+  font-family: "segoe ui",helvetica,arial,sans-serif;
+  color: #454545;
+  padding: 4px 12px 4px;
+  min-height: 17px;
+}
+
+.structureBorder #structure .foot {
+  padding-left: 8px;
+}
+
+#structure .main {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 58px;
+}
+
+#structure.ie7 .st-page .sechead {
+  z-index: 1;
+}
+
+#structure.ie7 .st-page .main {
+  z-index: 0;
+}
+
+#structuremodule .mod-header {
+  z-index: 11;
+}
+
+#structure .tableHeader {
+  margin: 0 0 0;
+  padding: 0;
+  position: relative;
+  height: 20px;
+  clear: both;
+  width: 100%;
+}
+
+#structure .tableHeader.drag {
+  cursor: ew-resize;
+}
+
+#structure.ie .tableHeader.drag {
+  cursor: e-resize;
+}
+
+#structure .tableHeader .st-hc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: transparent;
+}
+
+#structure .tableHeader .st-hc .st-hc-d {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#structure .th-ctls {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#structure .tableHeader .th-ctl {
+  height: 100%;
+  min-height: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#structure .tableHeader .th-ctl > div {
+  margin: 0 5px;
+  display: none;
+}
+
+#structure .tableHeader .th-ctl.active > div {
+  display: block;
+}
+
+#structure .tableHeader .th-ctl .th-ctl-hi {
+  height: 20px;
+  z-index: 98;
+  overflow: hidden;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#structure .tableHeader .th-ctl-mv-helper {
+  height: 20px;
+  z-index: 198;
+  overflow: hidden;
+  border-left: 1px solid #f3f3f3;
+  border-right: 1px solid #f3f3f3;
+  border-top: 1px solid #f3f3f3;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #f3f3f3;
+  color: #454545;
+}
+
+#structure .th-ctl-mv-helper .celldiv {
+  padding: 1px 7px 3px;
+}
+
+#structure .th-ctl-hi .celldiv {
+  visibility: hidden;
+  float: left;
+  padding: 1px 1px 3px 7px;
+}
+
+#structure .th-ctl-mv {
+  cursor: ew-resize;
+  height: 100%;
+}
+
+#structure.ie .th-ctl-mv {
+  cursor: e-resize;
+}
+
+#structure a.th-ctl-cfg {
+  margin-top: 3px;
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  text-decoration:none;
+  text-indent: -9999px;
+  display: block;
+  float: right;
+  background: #ffffff url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_888888_256x240.png) no-repeat -64px -18px;
+}
+
+#structure a.th-ctl-cfg:hover {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_222222_256x240.png);
+}
+
+#structure .th-ctls > div.s-resizer {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  width: 8px;
+  z-index: 100;
+}
+
+#structure .th-ctls > div.s-resizer.s-rs-onduty {
+  height: 22px;
+}
+
+#structure .th-ctls > div.s-resizer a.handle {
+  display: block;
+  text-decoration: none;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-color: #cccccc;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  cursor: ew-resize;
+}
+
+#structure.ie .th-ctls > div.s-resizer a.handle {
+  cursor: e-resize;
+}
+
+#structure .th-ctls > div.s-resizer.s-rs-onduty a.handle {
+  background-color: #b2b2b2;
+}
+
+#structure .th-ctls > div.s-resizer.s-rs-active a.handle {
+  background-color: #999999;
+}
+
+#structure .th-ctls > div.s-resizer.s-rs-snapped a.handle {
+  background-color: #eeee00;
+}
+
+#structure .th-ctls > div.s-resizer.s-rs-nomove a.handle {
+  cursor: default;
+}
+
+#structure .resizeIndicator {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  display: none;
+  border-left: 2px solid #cccccc;
+}
+
+#structure .resizeIndicator.s-rs-snapped {
+  border-left: 2px solid #eeee00;
+}
+
+#structure .tableHeader .th {
+  white-space: nowrap;
+  height: 20px;
+  min-height: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#structure .tableHeader .th .celldiv {
+  color: #999999;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  margin-right: 7px;
+}
+
+#structure .tr {
+  position: relative;
+  height: 28px;
+  border-bottom: 1px solid #eeeeee;
+  margin: 0;
+  padding: 0;
+}
+
+/*z-index needed by IE */
+#structure.ie .tr {
+  z-index: 0;
+}
+#structure.ie .tr.s-edited {
+  z-index: 1;
+}
+#structure.ie7 .tr.s-edited #s-edited-td {
+  z-index: 2;
+}
+#structure.ie7 .tr .td {
+  z-index: 0;
+}
+
+
+/*conflict*/
+#structure .main .aui-shadow .tr {
+  position: absolute;
+  height: auto;
+  border: none;
+  background-color: transparent;
+}
+
+#structure .td {
+  height: 28px;
+  min-height: 28px;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#structure .celldiv {
+  white-space: nowrap !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  position: relative;
+  height: 18px;
+  line-height: 18px;
+  min-height: 18px;
+  max-height: 18px;
+  overflow: hidden;
+}
+#structure .celldiv .value {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0;
+  background: transparent;
+  max-width: none;
+}
+
+#structure .tr .celldiv .value * {
+  display: inline;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+#structure .celldiv.s-f-thumbnail {
+  height: 26px;
+  max-height: 26px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+#structure .celldiv.s-f-thumbnail .value a {
+  text-decoration: none;
+}
+
+/* hide replaced and implicitly non-inline elements - except images and some tags */
+#structure .value input, #structure .value textarea, #structure .value select,
+#structure .value br {
+  display: none !important;
+}
+
+/* hide images and most everything in the main column */
+#structure .value .issueDescription img, #structure .value .issueDescription pre,
+#structure .value .issueDescription table {
+  display: none !important;
+}
+
+#structure .celldiv .value .labels-wrap, #structure .celldiv .value ul.labels, #structure .celldiv .value ul.labels li,
+#structure .celldiv .value ul.labels li .lozenge, #structure .celldiv .value ul.labels li .lozenge span {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+#structure .celldiv .value .labels-wrap {
+  position: relative;
+}
+
+#structure .celldiv .value .labels-wrap span {
+  line-height: 11px;
+}
+
+#structure .celldiv .value ul.labels {
+  padding-top: 1px;
+}
+
+#structure .celldiv .value ul.labels li {
+  float: none;
+  margin-right: 0;
+}
+#structure.ie7 .celldiv .value ul.labels li {
+  display: inline;
+  margin-right: 3px;
+}
+
+#structure .celldiv .value .s-icons > img {
+  width: 16px;
+  height: 16px;
+}
+
+/* **** */
+/* ROW BACKGROUND COLORS AND GRADIENTS --- THE ORDER OF RULES IS IMPORTANT! */
+/* **** */
+
+#structure .tr {
+  background-color: #ffffff;
+}
+
+#structure .tr.s-h-added, #structure .tr.s-h-movedTo {
+  background-color: #f3fff3;
+}
+
+#structure .tr.s-h-removed, #structure .tr.s-h-movedFrom {
+  background-color: #fff3f3;
+}
+
+#structure .tr.rootpath {
+  background-color: #fafafa;
+}
+
+#structure .tr.hrowf {
+  background-color: #f0f0f0;
+}
+
+/* , #structure .st-focused .tr.s-focused.hrowf */
+#structure .st-focused .tr.s-focused {
+  background-color: #EAF1FD;
+}
+
+#structure .tr.dragged {
+  background-color: #ffffff !important;
+  opacity: 0.75;
+}
+
+#structure .grad, #st-gh-name-grad {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 28px;
+  width: 20px;
+  z-index: 100;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF 3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome, Safari 4+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00FFFFFF', endColorstr='#FFFFFF',GradientType=1 ); /* IE 6-9 */
+  background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE 10+ */
+  background: linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+}
+
+#structure .s-h-added .grad, #structure .s-h-movedTo .grad {
+  background: -moz-linear-gradient(left, rgba(243, 255, 243, 0) 0%, rgba(243, 255, 243, 1) 100%); /* FF 3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(243, 255, 243, 0)), color-stop(100%, rgba(243, 255, 243, 1))); /* Chrome, Safari 4+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00F3FFF3', endColorstr = '#F3FFF3', GradientType = 1); /* IE 6-9 */
+  background: -ms-linear-gradient(left, rgba(243, 255, 243, 0) 0%, rgba(243, 255, 243, 1) 100%); /* IE 10+ */
+  background: linear-gradient(left, rgba(243, 255, 243, 0) 0%, rgba(243, 255, 243, 1) 100%); /* W3C */
+}
+
+#structure .s-h-removed .grad, #structure .s-h-movedFrom .grad {
+  background: -moz-linear-gradient(left, rgba(255, 243, 243, 0) 0%, rgba(255, 243, 243, 1) 100%); /* FF 3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 243, 243, 0)), color-stop(100%, rgba(255, 243, 243, 1))); /* Chrome, Safari 4+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00FFF3F3', endColorstr = '#FFF3F3', GradientType = 1); /* IE 6-9 */
+  background: -ms-linear-gradient(left, rgba(255, 243, 243, 0) 0%, rgba(255, 243, 243, 1) 100%); /* IE 10+ */
+  background: linear-gradient(left, rgba(255, 243, 243, 0) 0%, rgba(255, 243, 243, 1) 100%); /* W3C */
+}
+
+#structure .rootpath .grad {
+  background: -moz-linear-gradient(left, rgba(250, 250, 250, 0) 0%, rgba(250, 250, 250, 1) 100%); /* FF 3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(250, 250, 250, 0)), color-stop(100%, rgba(250, 250, 250, 1))); /* Chrome, Safari 4+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00FAFAFA', endColorstr = '#FAFAFA', GradientType = 1); /* IE 6-9 */
+  background: -ms-linear-gradient(left, rgba(250, 250, 250, 0) 0%, rgba(250, 250, 250, 1) 100%); /* IE 10+ */
+  background: linear-gradient(left, rgba(250, 250, 250, 0) 0%, rgba(250, 250, 250, 1) 100%); /* W3C */
+}
+
+#structure .hrow .grad {
+  visibility: visible;
+  background: -moz-linear-gradient(left, rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(240,240,240,0)), color-stop(100%,rgba(240,240,240,1)));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00F0F0F0', endColorstr='#F0F0F0',GradientType=1 );
+  background: -ms-linear-gradient(left, rgba(240,240,240,0) 0%,rgba(240,240,240,1) 100%);
+  background: linear-gradient(left, rgba(240,240,240,0) 0%,rgba(240,240,240,1) 100%);
+}
+
+#structure .s-bganimation .grad {
+  visibility: hidden;
+}
+
+#structure .st-focused .tr.s-focused .grad {
+  background: -moz-linear-gradient(left, rgba(234,241,253,0) 0%, rgba(234,241,253,1) 100%); /* FF 3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(234,241,253,0)), color-stop(100%,rgba(234,241,253,1))); /* Chrome, Safari 4+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00EAF1FD', endColorstr='#EAF1FD',GradientType=1 ); /* IE 6-9 */
+  background: -ms-linear-gradient(left, rgba(234,241,253,0) 0%,rgba(234,241,253,1) 100%); /* IE 10+ */
+  background: linear-gradient(left, rgba(234,241,253,0) 0%,rgba(234,241,253,1) 100%); /* W3C */
+}
+
+#structure .th .grad {
+  z-index: 90;
+}
+#structure.ie8 .th .grad, #structure.ie7 .th .grad {
+  height: 20px;
+}
+
+#structure .issueArea {
+  position: relative;
+}
+
+#structure .cacheTable {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+#structure .s-masterhint {
+  position: absolute;
+  z-index: 50;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+#structure .s-masterhint span {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 2em 0;
+  color: #bbb;
+  font-size: 130%;
+  line-height: 1.35;
+}
+
+#structure .issueDescription, #structure .descriptionSeparator {
+  color: #909090;
+}
+
+#structure .issueDescription a, #structure .issueDescription a:visited, #structure .issueDescription a:active {
+  color: #91a2b5;
+}
+
+#structure .value p {
+  display: inline;
+}
+
+#structure .ds {
+  padding: 0 0.5em;
+}
+
+#structure .issueKey {
+  padding-right: 0.5em;
+}
+
+#structure a, #structure a:visited:not([class*='ghx-label-']), #structure a:active {
+  color: #3b73af;
+}
+
+#structure .tr.rootpathlast {
+  border-color: #bbbbbb;
+}
+
+#structure .tr.root .offset {
+  font-weight: bold;
+}
+
+#structure .rootpath .value {
+  opacity: 0.7;
+  background-color: inherit;
+}
+
+#structure .dimmed.hrow .value, #structure .dimmed.hrowf .value {
+  /*opacity: 1;*/
+}
+
+#structure .expander {
+  padding-right: 16px;
+  cursor: pointer;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_888888_256x240.png) no-repeat;
+  background-position: -9999px -9999px;
+}
+
+#structure.ie7 .expander {
+  display: inline-block;
+  height: 15px;
+  vertical-align: top;
+  position: relative;
+  top: 2px;
+}
+
+#structure .leaf .expander {
+  background-position: -9999px -9999px;
+}
+
+#structure .collapsed .expander {
+  background-position: -32px -17px;
+}
+
+#structure .expanded .expander {
+  background-position: -64px -16px;
+}
+
+#structure .expander.hexp {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_222222_256x240.png);
+}
+
+#structure div.tr.rootpath.expanded .expander {
+  background-position: 0 0;
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/extraicons.png);
+  cursor: default;
+}
+
+#structure .dimmed .value {
+  opacity: 0.4;
+  background-color: inherit;
+}
+
+#structure.ie7 .dimmed .value, #structure.ie8 .dimmed .value {
+  filter: alpha(opacity=40);
+}
+
+#structure .celldiv, #structure .td {
+  background-color: inherit;
+}
+
+/* workaround for https://bugs.webkit.org/show_bug.cgi?id=4059 */
+#structure.webkit .s-bganimation .celldiv, #structure.webkit .s-bganimation .td, #structure.webkit .s-bganimation .value {
+  background-color: transparent;
+}
+#structure.ie .s-bganimation .celldiv, #structure.ie .s-bganimation .td, #structure.ie .s-bganimation .value {
+  background-color: transparent;
+}
+
+#structure .dimmed.hrow .value, #structure .dimmed.hrowf .value {
+  opacity: 1;
+}
+
+#structure.ie7 .dimmed.hrow .value, #structure.ie7 .dimmed.hrowf .value,
+#structure.ie8 .dimmed.hrow .value, #structure.ie8 .dimmed.hrowf .value {
+  filter:;
+}
+
+#structure .tr span.s-aggr-own {
+  margin-left: 1em;
+  color: #aaa;
+}
+
+#structure .head > .mousePanel {
+  position: relative;
+}
+
+#structure .st-tb {
+  display: block;
+  float: left;
+  height: 20px;
+  min-width: 20px;
+  border: 1px solid #ffffff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#structure .st-tb.s-disabled, #structure .st-tb.s-disabled.hover, #structure .st-tb.s-disabled.hover.pressed, #structure .st-tb.s-disabled.pressed {
+  background-color: transparent;
+  border-color: #ffffff;
+  background: none;
+}
+
+#structure .mousePanel.hover .st-tb.s-disabled .st-tbi {
+  background: transparent url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_888888_256x240.png) no-repeat;
+}
+#structure .mousePanel.hover .st-tb.s-disabled .st-tbi.s-extra {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/extraicons.png);
+}
+
+#structure .mousePanel.hover .st-tb.s-disabled .st-tbt {
+  color: #888888;
+}
+
+#structure .st-tb.first {
+  margin-left: 8px;
+}
+
+#structure .st-tb.hover {
+  border-color: #cccccc;
+  background-color: #eaeaea;
+  background: -moz-linear-gradient(center top, #FDFDFD, #EAEAEA) repeat scroll 0 0; /* FF 3.6+ */
+  background: -webkit-gradient(linear, center top, center bottom, color-stop(0%,#FDFDFD), color-stop(100%,#EAEAEA)) repeat scroll 0 0; /* Chrome, Safari 4+ */
+  background: -ms-linear-gradient(center top, #FDFDFD, #EAEAEA) repeat scroll 0 0; /* IE 10+ */
+  background: linear-gradient(center top, #FDFDFD, #EAEAEA) repeat scroll 0 0; /* W3C */
+}
+
+#structure .st-tb.hover:active, #structure .st-tb:active {
+  background: #dedede;
+}
+
+#structure .st-tb.toggled {
+  border-color: #abceff;
+}
+
+#structure .mousePanel.hover .st-tbi {
+  background: transparent url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_222222_256x240.png) no-repeat;
+}
+#structure .mousePanel.hover .st-tbi.s-extra {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/extraicons_222222.png);
+}
+#structure .mousePanel.hover .st-tbt {
+  color: #222222;
+}
+
+#structure .st-tbi {
+  background: transparent url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_888888_256x240.png) no-repeat;
+  position: relative;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  top: 2px;
+  float: left;
+}
+#structure .st-tbi.s-extra {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/extraicons.png);
+}
+
+#structure .st-tbt {
+  float: left;
+  font-family: "segoe ui",helvetica,arial,sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  height: 16px;
+  padding-right: 6px;
+  padding-top: 2px;
+  -moz-user-select:none;
+  -webkit-user-select: none;
+  white-space:nowrap;
+  cursor: default;
+  color: #888888;
+}
+
+#structure.webkit.mac .st-tbt, #structure.ie8 .st-tbt, #structure.mac.mozilla .st-tbt {
+  padding-top: 3px;
+}
+
+#structure .button.first {
+  -moz-border-radius-bottomleft: 0.25em;
+  -moz-border-radius-topleft: 0.25em;
+  -webkit-border-bottom-left-radius: 0.25em;
+  -webkit-border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+  border-top-left-radius: 0.25em;
+  border-left-color: #dddddd;
+}
+
+#structure .button.last {
+  -moz-border-radius-bottomright: 0.25em;
+  -moz-border-radius-topright: 0.25em;
+  -webkit-border-bottom-right-radius: 0.25em;
+  -webkit-border-top-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+}
+
+#structure .button.hover, #structure .button.on.hover {
+  border-color: #aaaaaa !important;
+}
+
+#structure .button.pressed, #structure .button.hover.pressed, #structure .button.on.pressed {
+  border-color: #777777 !important;
+  background-color: #fafafa;
+  padding: 1px 0 0 1px;
+
+}
+
+#structure .button.on {
+  background-color: #ffffff;
+  border-color: #999999 !important;
+}
+
+#structure div.simpleProgress {
+  float: left;
+  width: 95%;
+  margin-top: 4px;
+  height: 7px;
+  border: 1px solid #cccccc;
+}
+
+#structure div.simpleProgress > div {
+  float: left;
+  height: 7px;
+  background-color: #b3eb97;
+}
+
+#st-error-panel {
+  position: fixed;
+  bottom: -3em;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  padding: 0;
+}
+
+#st-error-panel .st-top-error, #st-error-panel .st-more-errors {
+  background-color: #ebc7c1;
+  color: #000000;
+  font-weight: bolder;
+  padding: 0.6em 1em 0.5em;
+  float: left;
+}
+
+#st-error-panel .s-ui-icon-alert {
+  margin-right: 0.5em;
+  float: left;
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png);
+}
+
+#st-error-panel .s-ui-icon-circle-close {
+  margin-left: 0.5em;
+}
+
+#st-error-panel .st-error-actions {
+  float: right;
+  white-space: nowrap;
+  margin-left: 2em;
+}
+
+#st-error-panel .st-error-actions > * {
+  float: right;
+}
+
+#st-error-panel span {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#st-error-panel .st-more-errors {
+  border-left: 1px solid #ffffff;
+}
+
+#st-error-panel div.st-error-details-link {
+  display: none;
+}
+
+#st-error-panel div.st-error-details {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  background-color: #ebc7c1;
+  display: none;
+}
+
+#st-error-panel .st-error-details-view {
+  margin: 0 1em 0.5em;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Consolas, Courier New, monospace;
+  border: none;
+  font-size: 85%;
+  line-height: 1.4;
+  height: 15em;
+  white-space: pre;
+  display: block;
+  resize: none;
+}
+
+#st-error-panel div.st-error-details-content {
+  white-space: pre;
+}
+
+#st-error-panel .s-ui-icon.st-hover {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_454545_256x240.png);
+}
+
+#structure #issuetable .st-focused .s-focused .issue_actions div, #structure #issuetable .hrow .issue_actions div {
+  visibility: visible;
+}
+
+#structure #issuetable .issue_actions a.active,
+#structure #issuetable .hrow .issue_actions a.aui-dd-link,
+#structure #issuetable .st-focused .s-focused .issue_actions a.aui-dd-link {
+  left: 0;
+  top: 0;
+}
+
+#structure #issuetable .issue_actions {
+  padding: 5px 0 5px 12px;
+}
+
+#structure #issuetable .issue_actions .aui-dd-parent {
+  width: 32px;
+  height: 18px;
+}
+
+#structure #issuetable .issue-actions-trigger {
+  display: block;
+  border: none;
+  visibility: hidden;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/atlasicons.png) transparent no-repeat 1px -113px;
+}
+
+#structure #issuetable .issue-actions-trigger:hover,
+#structure #issuetable .issue-actions-trigger.active {
+  color: #fff;
+  background-color: #3b73af;
+  background-position: -30px -113px;
+}
+
+#structure #issuetable .st-focused .s-focused .issue-actions-trigger,
+#structure #issuetable .hrow .issue-actions-trigger {
+  visibility: visible;
+}
+
+#structure #issuetable .issue_actions a.aui-dd-link span {
+  display: block;
+  width: 15px;
+  height: 18px;
+  overflow: hidden;
+  text-indent: -9000px;
+}
+
+#structure #st-glass {
+  position: absolute;
+  z-index: 1999;
+  width: 0;
+  height: 0;
+}
+
+#structure .st-act-cn {
+  position: absolute;
+}
+
+.st-handles {
+  white-space: nowrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  height: 18px;
+  min-height: 18px;
+  max-height: 18px;
+  overflow: hidden;
+}
+
+.st-cl-mark, .st-op-mark, .st-rw-mark, .st-ro-mark, .s-ed-mark, .s-ed-err-mark, .s-ed-err-new-mark, .s-ms-mark {
+  height: 14px;
+  width: 12px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+
+.s-h-added-mark, .s-h-removed-mark, .s-h-empty-mark,
+.s-h-movedFrom-mark, .s-h-movedUpFrom-mark, .s-h-movedDownFrom-mark, .s-h-movedLeftFrom-mark, .s-h-movedRightFrom-mark,
+.s-h-movedTo-mark, .s-h-movedUpTo-mark, .s-h-movedDownTo-mark, .s-h-movedLeftTo-mark, .s-h-movedRightTo-mark {
+  height: 14px;
+  width: 16px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: none;
+  float: left;
+}
+
+.s-history-mode .s-h-added-mark, .s-history-mode .s-h-removed-mark, .s-history-mode .s-h-empty-mark,
+.s-history-mode .s-h-movedFrom-mark, .s-history-mode .s-h-movedUpFrom-mark, .s-history-mode .s-h-movedDownFrom-mark,
+.s-history-mode .s-h-movedLeftFrom-mark, .s-history-mode .s-h-movedRightFrom-mark,
+.s-history-mode .s-h-movedTo-mark, .s-history-mode .s-h-movedUpTo-mark, .s-history-mode .s-h-movedDownTo-mark,
+.s-history-mode .s-h-movedLeftTo-mark, .s-history-mode .s-h-movedRightTo-mark {
+  display: block;
+}
+
+/* --- drag handles --- */
+/* These are a bit tricky, because some of these rules are meant to override others - beware! */
+.st-dh {
+  float: left;
+  height: 29px;
+  width: 16px;
+  cursor: move;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/mover.png) no-repeat 16px 0 content-box;
+}
+
+/* Fat handle for Structure Board. NB: overriding rules should be more specific */
+.structureBorder .st-master .st-dh {
+  padding: 0 5px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/mover-fat.png) no-repeat 16px 0 content-box;
+}
+
+#structure.ro .st-dh {
+  visibility: hidden;
+}
+
+.tr.hrowf .st-dh, .st-focused .s-focused .st-dh {
+  background-position: 0 0;
+}
+
+.tr.cut .st-dh {
+  background-position: -32px 0;
+}
+
+.tr.cut.hrowf .st-dh, .st-focused .cut.s-focused .st-dh {
+  background-position: -16px 0;
+}
+
+#structure.ro .cut .st-dh  {
+  visibility: visible;
+  background-position: -48px 0;
+  cursor: default;
+}
+
+#structure .rootpath .st-dh {
+  visibility: hidden;
+  cursor: default;
+}
+
+#structure .rootpath.cut .st-dh {
+  visibility: visible;
+  background-position: -32px 0;
+}
+
+#structure.ro .rootpath.cut .st-dh {
+  visibility: visible;
+  background-position: -48px 0;
+}
+
+#structure .tr.root .st-dh {
+  background-position: -64px 0;
+  cursor: default;
+}
+
+#structure.ro .tr.root .st-dh {
+  visibility: visible;
+}
+
+#structure .tr.root.cut .st-dh {
+  background-position: -80px 0;
+}
+
+#structure.ro .tr.root.cut .st-dh {
+  background-position: -96px 0;
+}
+
+/* Keep the padding in the dragged row in the Structure Board */
+.structureBorder .st-dnd-content .p1fullwidth .st-dh {
+  padding: 0 5px;
+}
+
+/* --- selection --- */
+
+.s-ms-mark {
+  visibility: hidden;
+  width: 16px;
+  height: 18px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/select.png) no-repeat 0 0;
+  cursor: default;
+  outline: 0;
+}
+
+.s-ms-mark:hover, .s-ms-toggle-all:hover {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/select-hover.png);
+}
+.s-ms-mark:hover:active, .s-ms-mark:active, .s-ms-toggle-all:active, .s-ms-toggle-all:hover:active {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/select-active.png);
+}
+
+.s-ms-mark.s-ms-on, .s-ms-mark.s-ms-some, .s-ms-mark.s-ms-all, .tr.hrowf .s-ms-mark, .tr.s-hrow-0 .s-ms-mark {
+  visibility: visible;
+}
+
+.s-ms-mark.s-ms-auto {
+  opacity: 0.5;
+}
+
+.s-ms-mark.s-ms-some {
+  background-position: -16px 0;
+}
+
+.s-ms-mark.s-ms-all {
+  background-position: -32px 0;
+}
+
+.s-ms-mark.s-ms-on {
+  background-position: -48px 0;
+}
+
+.s-ms-mark.s-ms-on.s-ms-some {
+  background-position: -64px 0;
+}
+
+.s-ms-mark.s-ms-on.s-ms-all {
+  background-position: -80px 0;
+}
+
+.s-th-handle {
+  position: absolute;
+  left: 16px;
+  bottom: 0;
+  width: 8px;
+  height: 18px;
+  background-color: #FFFFFF;
+}
+
+.structureBorder .st-master .s-th-handle {
+  left: 26px;
+}
+
+.s-ms-toggle-all {
+  width: 100%;
+  height: 100%;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/select.png) no-repeat 0 0;
+  display: block;
+  cursor: default;
+  outline: 0;
+}
+
+.s-ms-t-a-th {
+  visibility: hidden;
+}
+
+.s-ms-t-a-th.s-ms-t-a-some {
+  visibility: visible;
+}
+
+.s-ms-toggle-all.s-ms-t-a-all {
+  background-position: -48px 0;
+}
+
+/* ---------------- */
+
+#structure.ro .s-ro-hide {
+  display: none;
+}
+
+#structure.s-nocreate .s-nocreate-hide {
+  display: none;
+}
+
+#structure .s-ro-show {
+  display: none;
+}
+
+#structure.ro .s-ro-show {
+  display: block;
+}
+
+#structure.s-nobulk .s-bulk-show {
+  display: none;
+}
+
+.st-cl-mark, .st-ro-mark {
+  cursor: default;
+}
+
+.st-cl-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_538e27_256x240.png) -66px -144px;
+}
+
+.st-ro-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) -194px -96px;
+}
+
+.s-ed-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_2e83ff_256x240.png) -66px -112px;
+}
+
+.s-ed-err-mark, .s-ed-err-new-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) -2px -144px;
+}
+
+.s-h-added-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_538e27_256x240.png) -32px -128px;
+}
+
+.s-h-movedTo-mark {
+  /* todo icon? */
+}
+
+.s-h-movedUpTo-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_538e27_256x240.png) -192px -48px;;
+}
+
+.s-h-movedDownTo-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_538e27_256x240.png) -224px -48px;
+}
+
+.s-h-movedLeftTo-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_538e27_256x240.png) -240px -48px;
+}
+
+.s-h-movedRightTo-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_538e27_256x240.png) -208px -48px;
+}
+
+.s-h-movedFrom-mark {
+  /* todo icon? */
+}
+
+.s-h-movedUpFrom-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) 0 -48px;
+}
+
+.s-h-movedDownFrom-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) -64px -48px;
+}
+
+.s-h-movedLeftFrom-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) -96px -48px;
+}
+
+.s-h-movedRightFrom-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) -32px -48px;
+}
+
+.s-h-removed-mark {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) -96px -128px;
+}
+
+#issuetable.fake {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+#st-dd-active {
+  position: absolute;
+}
+
+#st-body-glass {
+  position: absolute;
+  z-index: 9999;
+}
+
+#structure .br, #s-manage-views .br {
+  clear: both;
+}
+
+#st-tb-tg {
+  position: absolute;
+  z-index: 199;
+  top: -4px;
+  left: 1px;
+}
+
+#structure #st-tb-tg .st-tb {
+  margin: 0;
+  padding: 0;
+}
+
+#structure #st-tb-tg .st-tb {
+  height: 15px;
+  min-width: 15px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  cursor: default;
+}
+
+#structure #st-tb-tg .st-tbi {
+  background: transparent url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_2e83ff_256x240.png) no-repeat -65px 0;
+  height: 15px;
+  width: 15px;
+  left: 0px;
+  top: 0;
+}
+
+#structure .st-tb-h #st-tb-tg .st-tbi {
+  background-position: 0px -1px;
+}
+
+#st-tgp {
+  margin: 0 6px 0 20px;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: none;
+}
+
+.st-stat, #st-stat-sel {
+  float: left;
+}
+
+.st-progress, .s-editor-warning, .s-undo-redo {
+  float: left;
+  padding: 0 1em;
+}
+
+.s-editor-warning span {
+  padding-left: 16px;
+  height: 16px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) no-repeat 0 -143px;
+  margin-right: 2px;
+  float: left;
+  display: block;
+}
+#st-footer .s-editor-warning span {
+  background-position: 0 -144px;
+}
+
+#structure .s-editor-warning a, #structure .s-editor-warning a:visited, .s-editor-warning a, .s-editor-warning a:visited {
+  color: #cd0202;
+  font-weight: bolder;
+}
+
+.s-frlink {
+  float: right;
+  margin-left: 2em;
+}
+
+#structure .s-frlink a, #st-footer .s-frlink a,
+#structure .s-frlink a:visited, #st-footer .s-frlink a:visited {
+  color: #454545;
+}
+
+#structure .s-frlink a:hover, #st-footer .s-frlink a:hover,
+#structure .s-frlink a:focus, #st-footer .s-frlink a:focus,
+#structure .s-frlink a:active, #st-footer .s-frlink a:active {
+  color: #3b73af;
+}
+
+#structure .s-frlink a span, #st-footer .s-frlink a span {
+  display: inline-block;
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_888888_256x240.png);
+}
+
+#structure .s-frlink a:hover span, #st-footer .s-frlink a:hover span,
+#structure .s-frlink a:focus span, #st-footer .s-frlink a:focus span,
+#structure .s-frlink a:active span, #st-footer .s-frlink a:active span {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_2e83ff_256x240.png);
+}
+
+.s-info-link a span {
+  height: 12px;
+  width: 12px;
+  background-position: -18px -146px;
+  padding-right: 3px;
+  position: relative;
+  bottom: -2px;
+}
+
+.s-board-link a span {
+  height: 8px;
+  width: 8px;
+  background-position: -36px -84px;
+  padding-right: 3px;
+}
+
+.st-progress-icon {
+  height: 16px;
+  padding-right: 16px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/loading.gif) no-repeat 0 0;
+}
+#structure.ie7 .st-progress-icon {
+  display: inline-block;
+}
+
+#st-drag {
+  position: absolute;
+  z-index: 1;
+  border-top: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+}
+
+#st-dragcover {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  z-index: 9999;
+}
+
+#structure.dragactive .issueArea {
+  background-color: #eeeeee;
+}
+
+#structure .st-col-choose {
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  max-width: 300px;
+  min-width: 100px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+#structure.ie7 .st-col-choose {
+  width: 15em;
+}
+
+#structure.ie7 .st-col-choose > div {
+  width: 100%;
+}
+
+#structure .st-col-list {
+  max-height: 20em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#structure .st-col-nf {
+  padding: 5px 5px 6px;
+  border-bottom: 1px solid #bbb;
+  font-size: 70%;
+  color: #454545;
+  position: relative;
+}
+
+#structure .st-col-nf input {
+  width: 90%;
+}
+
+#structure .st-col-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#structure .st-col-list ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#structure .st-col-list ul li a {
+  padding: 2px 6px;
+  display: block;
+  text-decoration: none;
+  color: #454545;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: default;
+}
+
+#structure .st-col-list ul li.s-hover {
+  background-color: #d4e6ff;
+}
+
+#structure .st-col-choose.st-col-edit {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#structure .s-issue-cover {
+  position: absolute;
+  height: 100%;
+  z-index: 50;
+  display: none;
+  top: 0;
+}
+
+#structure .s-ic-left,
+#structure .s-ic-right {
+  background: #000;
+  opacity: 0.15;
+}
+
+#structure.ie7 .s-ic-left, #structure.ie8 .s-ic-left,
+#structure.ie7 .s-ic-right, #structure.ie8 .s-ic-right {
+  filter: alpha(opacity=15);
+}
+
+#structure .s-ic-left {
+  left: 0;
+}
+
+#structure .s-ic-right {
+  right: 0;
+}
+
+#structure .s-ic-middle {
+  background: none;
+  opacity: 1;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+}
+
+#structure.ie7 .s-ic-middle, #structure.ie8 .s-ic-middle {
+  filter:;
+}
+
+#structure .s-ic-middle-fill {
+  background: #fff;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#structure.ie7 .s-ic-middle-fill, #structure.ie8 .s-ic-middle-fill {
+  filter: alpha(opacity=0);
+}
+
+#structure li.col-gr-mark, #structure li.st-nf-nf {
+  background-color: #f3f3f3;
+  font-family: "segoe ui",helvetica,arial,sans-serif;
+}
+#structure li.st-nf-nf {
+  font-style: italic;
+}
+#structure .st-col-list ul li.st-dis a {
+  cursor: default;
+}
+
+#structure .th-ccnf {
+  position: absolute;
+  height: 19px;
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: white;
+}
+
+#structure .th-ccnf.hover {
+  border-color: #bbb;
+}
+
+#structure .th-ccnf.pressed {
+  background: #dedede;
+}
+
+#structure a.th-ccnf-add-icon,
+#structure a.th-ccnf-asz-icon {
+  display: block;
+  position: relative;
+  height: 16px;
+  top: 2px;
+  width: 100%;
+}
+
+#structure .th-ccnf-add {
+  top: 0;
+  right: 1px;
+  width: 16px;
+}
+
+#structure a.th-ccnf-add-icon {
+  background: url("/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_2e83ff_256x240.png") no-repeat -16px -129px;
+}
+
+#structure .th-ccnf-asz {
+  top: 0;
+  left: 25px;
+  width: 17px;
+}
+
+#structure a.th-ccnf-asz-icon {
+  background: url("/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_888888_256x240.png") no-repeat -112px -80px;
+}
+
+#structure .th-ccnf-asz.hover > a.th-ccnf-asz-icon {
+  background-image: url("/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_222222_256x240.png");
+}
+
+#structure a.th-ccnf-loading,
+#structure a.th-ccnf-loading:hover {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/loading.gif) no-repeat 0 0;
+}
+
+#structure .s-vc {
+  position: absolute;
+  background: white;
+  top: 0;
+  right: 1px;
+  height: 19px;
+  width: 16px;
+}
+
+#structure .s-vc > a {
+  display: block;
+  background: url("/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/extraicons.png") no-repeat 0 -47px;
+  position: relative;
+  height: 16px;
+  top: 2px;
+  width: 100%;
+  text-decoration: none;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+#structure .s-vc > a:hover, #structure .s-vc > a:active {
+  background-position: -16px -47px;
+}
+
+#structure .foot.hidden {
+  display: none;
+}
+
+#structure #issuetable {
+  margin: 0;
+  padding: 0;
+}
+
+#structure.st-unavailable #issuetable {
+  display: none;
+}
+
+#structure.st-unavailable #st-unavailable {
+  display: block;
+}
+
+#structure #st-unavailable {
+  padding: 1em;
+  text-align: center;
+  color: #bbb;
+  font-size: 130%;
+  line-height: 1.35;
+  display: none;
+}
+
+#open_jscoverage {
+  display: block;
+  position: fixed;
+  left: 49%;
+  top: 0;
+  padding: 3px 8px;
+  background: #fff;
+  font-family: "segoe ui", helvetica, arial, sans-serif;
+  font-size: 12px;
+  border: 2px solid #ccc;
+  opacity: 0.4;
+  z-index: 9999;
+}
+
+a#open_jscoverage:hover {
+  opacity: 1;
+}
+
+#structure .st-page {
+  position: relative;
+  overflow: visible;
+  min-height: 78px;
+}
+
+#structure .st-page > .vcol {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  overflow: visible;
+}
+
+#structure .st-splitter {
+  width: 7px;
+  background-color: #ccc;
+  cursor: ew-resize;
+  display: none;
+}
+
+#structure.ie .st-splitter {
+  cursor: e-resize;
+}
+
+#structure .st-master {
+  left: 0;
+  width: 100%;
+}
+
+#structure .st-slave {
+  display: none;
+}
+
+#structure .st-page > .s-history {
+  display: none;
+}
+
+#structure .s-history .s-h-entries {
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid #bbbbbb;
+}
+
+#structure .s-h-entry {
+  border-bottom: 1px solid #eeeeee;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+
+#structure .s-h-entry.s-h-selected {
+  background-color: #EAF1FD;
+}
+
+#structure .s-h-entry .s-h-e-avatar {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  left: 8px;
+}
+
+#structure .s-h-entry .s-h-e-body {
+  padding: 2px 2px 2px 30px;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+#structure .s-h-after-entries {
+  text-align: center;
+}
+
+#structure .s-h-show-more {
+  margin: 4px 2px;
+  display: none;
+}
+
+#structure .s-h-nothing-more {
+  padding: 4px 0;
+  font-size: 11px;
+  line-height: 15px;
+  color: #777777;
+  width: 100%;
+  display: none;
+}
+
+#structure .s-h-e-add .s-h-e-body {
+  border-left: 4px solid #538e27;
+}
+
+#structure .s-h-e-move .s-h-e-body {
+  border-left: 4px solid #eeeeee;
+}
+
+#structure .s-h-e-remove .s-h-e-body {
+  border-left: 4px solid #cd0a0a;
+}
+
+#structure .s-h-e-timestamp {
+  font-size: 11px;
+  line-height: 15px;
+  color: #777777;
+}
+
+#structure .s-h-e-toggle {
+  height: 12px;
+  width: 23px;
+}
+
+#structure .s-h-e-t-from, #structure .s-h-e-t-to {
+  width: 10px;
+  height: 10px;
+  float: left;
+  background: transparent url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/extraicons.png) no-repeat -3px -35px;
+  border: 1px solid transparent;
+}
+
+#structure .s-h-e-t-from {
+  border-right: none;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#structure .s-h-e-t-to {
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#structure .s-h-entry.s-h-selected .s-h-e-toggle.s-h-e-from .s-h-e-t-from {
+  background-position: -19px -35px;
+  border-color: #888888;
+  border-right: 1px solid #888888;
+}
+
+#structure .s-h-entry.s-h-selected .s-h-e-toggle.s-h-e-from .s-h-e-t-to {
+  border-left: none;
+}
+
+#structure .s-h-entry.s-h-selected .s-h-e-toggle.s-h-e-to .s-h-e-t-to {
+  background-position: -35px -35px;
+  border-color: #888888;
+}
+
+#structure .s-h-e-toggle:hover > div {
+  border-color: #cccccc;
+}
+
+#structure .s-h-e-toggle:hover .s-h-e-t-from {
+  background-position: -19px -35px;
+}
+
+#structure .s-h-e-toggle:hover .s-h-e-t-to {
+  background-position: -35px -35px;
+}
+
+#structure .s-h-e-toggle > div:hover {
+  background-color: #eaeaea;
+}
+
+#structure .s-h-e-toggle > div:active {
+  background-color: #dedede;
+}
+
+#structure .s-h-position {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+}
+
+#structure .s-h-marker {
+  height: 2px;
+}
+
+#structure .s-h-pos-to {
+  background-color: #538e27;
+}
+
+#structure .s-h-pos-from {
+  background-color: #cd0a0a;
+}
+
+#structure .s-h-bracket {
+  height: 4px;
+  border-style: solid;
+}
+
+#structure .s-h-pos-to-start, #structure .s-h-pos-from-start {
+  border-width: 2px 2px 0 2px;
+}
+
+#structure .s-h-pos-to-end, #structure .s-h-pos-from-end {
+  border-width: 0 2px 2px 2px;
+}
+
+#structure .s-h-pos-to-start, #structure .s-h-pos-to-end {
+  border-color: #538e27;
+}
+
+#structure .s-h-pos-from-start, #structure .s-h-pos-from-end {
+  border-color: #cd0a0a;
+}
+
+#structure .st-page.resizeActive {
+  cursor: ew-resize;
+}
+
+#structure.ie .st-page.resizeActive {
+  cursor: e-resize;
+}
+
+#structure .st-search {
+  position: relative;
+  padding: 1px 20px 0;
+  display: none;
+}
+
+#structure .st-dnd-nhint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 28px;
+}
+
+#structure .st-dnd-nhint div.s-dnd-n {
+  float: left;
+  padding: 2px 4px 0 8px;
+  color: #cd0a0a;
+  font-family: "segoe ui", helvetica, arial, sans-serif;
+  font-size: 10px;
+  line-height: 17px;
+  font-weight: bolder;
+  background: #fff;
+  z-index: 1;
+}
+
+#structure .st-dnd-nhint .s-dnd-nodrop-ind {
+  clear: left;
+  float: left;
+  padding-left: 16px;
+  height: 10px;
+  background: #fff url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) no-repeat 0 -130px;
+  z-index: 1;
+  display: none;
+}
+
+#structure #st-drag.s-nodrop .s-dnd-nodrop-ind {
+  display: block;
+}
+
+
+#structure .st-dnd-content {
+  z-index: 0;
+}
+
+#st-structure-name {
+  background-color: #ffffff;
+  color: #666;
+}
+
+#st-select-structure {
+  display: inline-block;
+  overflow: hidden;
+  height: 16px;
+  background: #ffffff;
+  border: none;
+  text-indent: 0;
+  width: auto;
+  color: #888888;
+  font-size: 11px;
+  padding-right: 0.5em;
+  position: relative;
+  text-transform: lowercase;
+  top: 1px;
+  line-height: 20px;
+  font-family: "segoe ui", helvetica, arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#st-select-structure .xicon {
+  display: inline-block;
+  height: 6px;
+  padding-left: 16px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_888888_256x240.png) no-repeat -64px -21px;
+}
+
+#st-select-structure.hideCollapsed {
+  display: none;
+}
+
+.expanded #st-select-structure.hideCollapsed {
+  display: inline-block;
+}
+
+.s-single-structure .expanded #st-select-structure.hideCollapsed,
+.s-single-structure .s-hide-single-structure,
+.s-single-structure #pcv-structure-selector {
+  display: none;
+}
+
+#st-select-structure.hover .xicon {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_2e83ff_256x240.png);
+}
+
+#st-select-structure.hover {
+  color: #2e83ff;
+}
+
+#jira #st-select-structure-container a.aui-list-item-link {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#jira #st-select-structure-container h5 {
+  white-space: nowrap;
+}
+
+#jira #st-select-structure-container .s-more {
+  margin: 0;
+  border: none;
+}
+
+#structure .st-ssel {
+  float: right;
+  margin-left: 2em;
+}
+
+#st-gh-header {
+  position: relative;
+}
+
+#st-gh-name-div {
+  overflow: hidden;
+}
+
+#st-gh-name {
+  white-space: nowrap;
+}
+
+.ghx-detail-section #st-gh-name {
+  font-weight: bold;
+  color: #444;
+  font-size: 12px;
+}
+
+.ghx-detail-section #st-gh-header {
+  margin-bottom: 1em;
+}
+
+#st-gh-grad-div {
+  position: absolute;
+  left: 1px;
+}
+
+#st-gh-selector-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+}
+
+#st-gh-tab-content #st-select-structure {
+  line-height: normal;
+}
+
+#st-gh-selector .aui-dropdown {
+  left: -1000px;
+}
+
+#ghx-tab-com-almworks-jira-structure-greenhopper-tab {
+  margin-bottom: 0;
+  padding-bottom: 32px;
+}
+
+.st-pcv-head {
+  float: left;
+  margin: 0;
+}
+
+#pcv-structure-selector {
+  display: block;
+  float: left;
+  margin: 8px 24px 0 8px;
+}
+
+#st-gh-tab-content .st-ssel {
+  display: none;
+}
+
+#st-gh-tab-content .s-editor .jira-multi-select .representation .value-item {
+  padding: 0 20px 0 5px;
+}
+
+#st-gh-tab-content .s-editor textarea#description {
+  max-width: 300px;
+}
+
+#st-gh-tab-content #structure.ie8 .s-editor textarea#description {
+  width: 300px !important;
+}
+
+#structure .st-sr-label, #structure.webkit .st-sr-label, #structure.ie8 .st-sr-label {
+  margin-left: 24px;
+  padding-top: 5px;
+  position: relative;
+}
+
+#structure.ie10 .st-sr-label, #structure.ie9 .st-sr-label {
+  padding-top: 4px;
+}
+
+#structure.mac .st-sr-label {
+  margin-left: 23px;
+}
+
+#structure.mac.mozilla .st-sr-label {
+  padding-top: 6px; 
+}
+
+#structure .st-sr-qbox {
+  float: left;
+  margin-left: 4px;
+  padding-top: 2px;
+  z-index: 8000;
+  position: relative;
+  height: 24px;
+}
+
+#structure textarea.st-search-query {
+  font-size: 12px;
+  line-height: 14px;
+  height: 16px;
+  width: 30em;
+  max-width: none;
+  overflow: hidden;
+  padding: 3px 2px 1px 39px;
+  z-index: 1;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+#structure.mac textarea.st-search-query  {
+  padding-left: 43px;
+}
+
+#structure.mac.mozilla textarea.st-search-query {
+  padding-left: 41px;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+#structure .st-sr-qbox #st-searchtype-switch {
+  position: absolute;
+  z-index: 2;
+  left: 3px;
+  top: 5px;
+}
+
+/* The whole row is manually adjusted to be on the baseline with textarea, which differs across browsers */
+#structure.mozilla .st-sr-qbox #st-searchtype-switch {
+  top: 6px;
+}
+
+#structure #st-searchtype-switch {
+  height: 11px;
+}
+
+#structure #st-searchtype-but {
+  margin: 0;
+  padding: 0;
+  height: 14px;
+  min-width: 10px;
+}
+
+#structure #st-searchtype-but.toggled.st-jqlgood .st-tbt {
+  color: #888;
+}
+
+#structure #st-searchtype-but.st-jqlbad {
+  border-color: #C04030;
+  background: #C04030;
+}
+
+#structure #st-searchtype-but.st-jqlbad .st-tbt {
+  color: #fff;
+}
+
+#structure #st-searchtype-but.st-tb.hover.st-jqlbad {
+  background-color: #FFABAB;
+  background: -moz-linear-gradient(center top, #FFABAB, #C04030) repeat scroll 0 0; /* FF 3.6+ */
+  background: -webkit-gradient(linear, center top, center bottom, color-stop(0%,#FFABAB), color-stop(100%,#C04030)) repeat scroll 0 0; /* Chrome, Safari 4+ */
+  background: -ms-linear-gradient(center top, #FFABAB 0%, #C04030 100%) repeat scroll 0 0; /* IE 10+ */
+  background: linear-gradient(center top, #FFABAB, #C04030) repeat scroll 0 0; /* W3C */
+}
+
+#structure #st-searchtype-but.st-tb.hover.st-jqlbad:active, #structure #st-searchtype-but.st-tb.st-jqlbad:active {
+  background: #e58888;
+}
+
+#structure #st-searchtype-but .st-tbt {
+  font-size: 10px;
+  line-height: 14px;
+  height: 14px;
+  padding: 0 5px 0;
+  color: #ccc;
+  width: 22px;
+  text-align: center;
+}
+
+#structure.webkit #st-searchtype-but .st-tbt {
+  height: 13px;
+}
+
+#structure.mac #st-searchtype-but .st-tbt {
+  width: 25px;
+}
+
+#structure.mac.mozilla #st-searchtype-but .st-tbt {
+  padding: 0;
+  width: 32px;
+  margin: 1px 0px 0px 1px;
+}
+
+#structure .st-sr-qbox .suggestions li {
+  padding: 2px 10px;
+}
+
+#st-jqlerrormsg {
+  display: none;
+}
+
+#st-search-go .st-tbi {
+  background-position: 0 -160px;
+  margin-right: 2px;
+}
+
+#st-show-unstructured .st-tbi {
+  background-position: -160px -112px;
+  margin-right: 4px;
+}
+
+#s-add-unstructured .st-tbi {
+  background-position: -16px -128px;
+}
+
+#s-unstructured-actions {
+  float: left;
+  font-weight: bolder;
+}
+
+#structure .st-search.st-searching #st-search-go .st-tbi {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/loading.gif) no-repeat 0 0;
+}
+
+#st-search-result, #st-search-error, #st-search-notfound, #st-search-result-unstructured {
+  float: left;
+  display: none;
+}
+
+#st-search-result, #st-search-notfound, #st-search-go {
+  margin-top: 1px;
+}
+
+#structure.mozilla #st-search-result, #structure.mozilla #st-search-notfound, #structure.mozilla #st-search-go {
+  margin-top: 2px;
+}
+
+#st-search-notfound {
+  color: #802c2c;
+  font-weight: bolder;
+  height: 17px;
+  padding-top: 3px;
+  margin-left: 16px;
+}
+
+#st-search-filter .st-tbi {
+  background-position: -32px 0;
+}
+
+#s-search-columns .st-tbi {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/extraicons.png) no-repeat 0 -47px;
+}
+#structure .st-search.hover #s-search-columns .st-tbi, #structure .st-search.s-input-active #s-search-columns .st-tbi {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/extraicons.png) no-repeat -16px -47px;
+}
+
+#st-search-n-found, #st-search-n-un-found {
+  float: left;
+  height: 17px;
+  padding-top: 3px;
+  margin-left: 16px;
+}
+
+#structure.mac #st-search-n-found, #structure.mac #st-search-notfound {
+  padding-top: 4px;
+}
+
+#structure .st-search {
+  font-family: "segoe ui", helvetica, arial, sans-serif;
+  font-size: 12px;
+}
+
+#st-sr-scope {
+  float: left;
+  display: none;
+  padding: 4px 5px 1px;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: bolder;
+}
+
+#st-sr-scope .st-sr-scopename span {
+  background: #eee;
+  padding: 0 5px 1px;
+  color: #5b6d87;
+}
+#structure.mozilla.mac #st-sr-scope .st-sr-scopename span {
+  padding: 2px 5px 0;
+}
+
+#st-sr-scope .st-sr-scopename  {
+  float: left;
+}
+
+#st-search-result .s-issue-count {
+  color: #4981cc;
+  font-weight: bold;
+}
+
+#structure #s-cp-btn-toggleSearch .st-tbt {
+  padding-left: 3px;
+}
+
+#structure .st-search.hover .st-tbi, #structure .st-search.s-input-active .st-tbi {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_222222_256x240.png);
+}
+
+#structure .st-search.hover .st-tbt, #structure .st-search.s-input-active .st-tbt {
+  color: #222222;
+}
+
+#structure #st-search-n-found {
+  color: #888888;
+}
+
+#structure .st-search.hover #st-search-n-found, #structure .st-search.s-input-active #st-search-n-found {
+  color: #222222;
+}
+
+#structure-shortcuts-dialog #shortcutsmenu .module:nth-child(2n+1) {
+  clear: left;
+}
+
+#s-structure-fixed-empty {
+  display: none;
+}
+
+#structuremodule .s-blockingcover {
+  padding: 0;
+}
+
+.s-blockingcover {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 1em;
+}
+
+#structure .s-blockingcover table {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.s-blockingcover-desc, .s-action-desc {
+  color: #666;
+}
+
+.s-action-desc {
+  padding-top: 3px;
+}
+
+.s-blockingcover-action {
+  margin: 4px 0 0 1em;
+}
+
+#structure .s-blockingcover-action .st-tb {
+  border-color: #cccccc;
+  margin-right: 1em;
+}
+
+#structure .s-blockingcover-action .st-tbi {
+  background-image: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_2e83ff_256x240.png);
+}
+
+#structure .s-blockingcover-action .st-tbt {
+  color: #2e83ff;
+  margin-left: 2px;
+}
+
+.s-fixed-miss-title {
+  font-weight: bolder;
+}
+
+.s-fixed-miss-desc {
+  margin-bottom: 1em;
+}
+
+#structure.ro #s-add-target-issue, #structure.s-unstructured-issue-pinned #s-add-target-issue {
+  display: none;
+}
+
+#structure .s-extra-action {
+  display: none;
+}
+
+.s-editorpanel {
+  position: absolute;
+  z-index: 110;
+  top: -1px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.s-editorpanel.s-e-loading {
+  width: 100%;
+}
+
+.s-editor-celldiv {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 100%;
+  height: 28px;
+}
+
+.s-editor {
+  min-height: 24px;
+}
+
+.s-e-noeditor .s-editor-celldiv {
+  display: block;
+}
+
+.s-e-loading .s-editerror, .s-e-loading .s-editbuttons, .s-e-loading .s-editor {
+  display: none;
+}
+
+.s-editorborder {
+  background-color: #EAF1FD;
+  padding: 3px 0 5px 0;
+  border: 1px solid #ddd;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-box-shadow: 3px 3px 2px 2px rgba(122, 133, 153, 0.5);
+  -webkit-box-shadow: 3px 3px 2px 2px rgba(122, 133, 153, 0.5);
+  box-shadow: 3px 3px 2px 2px rgba(122, 133, 153, 0.5);
+  /* for whatever stupid reason IE does not display shadow if border-collapse is 'collapse' */
+  border-collapse: separate;
+}
+
+.s-editor, .s-editbuttons {
+  padding: 0 7px;
+}
+
+.s-e-transparent .s-editorborder {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.8;
+}
+
+.s-editor-decor1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 1px solid #EAF1FD;
+  width: 1px;
+  height: 29px;
+  display: none;
+}
+
+.s-cellerror {
+  position: absolute;
+  left: 1px;
+  top: 0;
+  width: 5px;
+  height: 5px;
+  background: transparent url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) -118px -22px no-repeat;
+}
+
+.s-cellerror-div {
+  position: absolute;
+  display: none;
+  top: 1px;
+}
+
+.s-e-error.s-e-editor .s-cellerror-div {
+  display: block;
+}
+
+.s-editor-loading {
+  position: absolute;
+  left: 7px;
+  top: 0;
+  z-index: 1;
+  width: 3px;
+  height: 28px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/field-loader.gif) 0 0 no-repeat;
+}
+
+#structure .s-editor-celldiv .grad {
+ right: 1px;
+}
+
+#structure .s-editerror {
+  display: none;
+  white-space: normal;
+  color: #cd0a0a;
+  margin-top: 0.6em;
+  padding: 0 7px 0 27px;
+  position: relative;
+  min-width: 168px;
+}
+
+#structure .s-editerror div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 7px;
+  top: 0;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) 0 -144px no-repeat;
+}
+
+#structure .s-editerror-description, #structure .s-editor-cancel-confirm {
+  padding: 0 7px 0 9px;
+  font-size: 10px;
+  color: #666;
+  white-space: normal;
+  line-height: 12px;
+  margin-top: 5px;
+}
+
+#structure .s-editerror-description a {
+  white-space: nowrap;
+}
+
+.s-editor-cancel-confirm .s-answer {
+  margin-top: 2px;
+}
+
+.s-editor-cancel-confirm .s-answer a {
+  white-space: nowrap;
+}
+
+.s-editor-cancel-yes {
+  font-weight: bolder;
+}
+
+#structure .s-e-error .s-editerror {
+  display: block;
+}
+
+#s-focus-placeholder {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  display: block;
+  left: -9999px;
+}
+
+.s-editbuttons, .s-editerrors {
+  clear: both;
+}
+
+#structure .s-editbuttons {
+  border-top: 1px solid #d5dbe8;
+  padding-top: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+#structure .s-editbuttons.s-with-dialog {
+  min-width: 19em;
+}
+
+#structure .s-editbuttons > a {
+  margin-right: 1em;
+  display: inline-block;
+  visibility: hidden;
+}
+
+.s-editorpanel-posmarker {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 3px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/extraicons.png) no-repeat -16px 0;
+}
+
+#structure .s-editorpanel .short-field,
+#structure .s-editorpanel .medium-field,
+#structure .s-editorpanel .long-field {
+  max-width: none;
+}
+
+#structure .s-editorpanel .long-field {
+  width: 200px;
+  min-width: 100px;
+  white-space: normal;
+}
+
+#structure .s-editorpanel textarea.long-field {
+  white-space: pre;
+}
+
+#structure .s-editorpanel .jira-multi-select {
+  width: 250px;
+  min-width: 100px;
+  white-space: normal;
+}
+
+#structure .s-editorpanel .jira-multi-select .long-field {
+  width: 100%;
+}
+
+#structure .s-editorpanel .long-field.userpickerfield {
+  width: auto;
+}
+
+#structure .s-editorpanel .wiki-edit-content .content-inner {
+  display: none;
+}
+#structure .s-editorpanel .wiki-edit-content.previewClass .content-inner {
+  display: block;
+  margin: 0;
+  overflow: auto;
+}
+#structure .s-editorpanel .wiki-edit-content.previewClass {
+  width: auto;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 2px solid #d7d7d7;
+  border-left: 2px solid #d7d7d7;
+  background-color: #f7f7f7;
+  padding: 0;
+  margin: 0 0 2px;
+  white-space: normal;
+  line-height: 15px;
+}
+#structure .s-editorpanel .field-group .wiki-edit + .field-tools {
+  margin-top: 5px;
+}
+
+#structure .tableHeader .th.s-col-edited .celldiv {
+  color: #102d57;
+  font-weight: bolder;
+}
+
+#structure.webkit .s-editbuttons .s-editor-done {
+  padding: 1px 4px;
+}
+
+#structure.ie .s-editbuttons .s-editor-done {
+  padding: 0 4px;
+}
+
+#structure.ie.ie10 .s-editbuttons .s-editor-done {
+  padding: 1px 5px 0 4px;
+}
+
+#structure .s-editorpanel input[type="text"] {
+  line-height: normal;
+}
+
+/* override JIRA aui styles */
+#structure .s-editorpanel .field-group,
+#structure .s-editorpanel fieldset.group {
+  padding: 0 !important;
+}
+
+#structure .s-editorpanel form.aui {
+  font-size: 12px !important;
+  margin: 0;
+}
+
+#structure .s-editorpanel form.aui .atlassian-autocomplete {
+  font-size: 12px;
+}
+
+#structure .s-editorpanel form.aui textarea {
+  line-height: 15px;
+  min-width: 0;
+}
+
+#structure .s-editorpanel form.aui .select {
+  min-width: 80px;
+  width: auto;
+  height: 100% !important;
+}
+
+#structure .s-editorpanel form.aui .text {
+  height: 100% !important;
+}
+
+#structure .s-editorpanel form.aui textarea,
+#structure .s-editorpanel form.aui select,
+#structure .s-editorpanel form.aui optgroup,
+#structure .s-editorpanel form.aui option,
+#structure .s-editorpanel form.aui input.text {
+  font-size: inherit;
+}
+
+#structure .s-editor > form.aui > .field-group > label {
+  float: none;
+  display: inline;
+  left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  position: static;
+}
+#structure .s-editor > form.aui > .field-group > label:after {
+  content: ":";
+}
+#structure .s-editor > form.aui > .field-group:nth-child(n+2) {
+  white-space: normal;
+}
+#structure.ie8 .s-editor > form.aui > .field-group {
+  white-space: normal;
+}
+#structure.ie8 .s-editor > form.aui > .field-group:first-child {
+  white-space: nowrap;
+}
+
+#structure .td .issue_actions .aui-dropdown-trigger span {
+  padding-right: 0;
+}
+#structure.webkit .s-h-show-more {
+  padding: 1px 4px;
+}
+
+#structure .s-editorpanel .aui-ss .aui-ss-field {
+  width: 100% !important;
+  max-width: none;
+}
+
+#structure.ie7 .s-editorpanel .aui-ss-has-entity-icon.aui-ss .aui-ss-field,
+#structure.ie8 .s-editorpanel .aui-ss-has-entity-icon.aui-ss .aui-ss-field {
+  padding-left: 20px !important;
+}
+
+#structure.ie7 .s-editorpanel textarea,
+#structure.ie8 .s-editorpanel textarea,
+#structure.ie7 .s-editorpanel input[type="text"],
+#structure.ie8 .s-editorpanel input[type="text"] {
+  max-width: none !important;
+}
+
+#structure.ie9 .s-editorpanel .aui-ss-has-entity-icon.aui-ss .aui-ss-field,
+#structure.ie10 .s-editorpanel .aui-ss-has-entity-icon.aui-ss .aui-ss-field {
+  line-height: 14px;
+}
+
+#tt_use_structure label {
+  color: #666;
+  margin-left: 0.5em;
+}
+
+ul.s-ops a.s-atlas-cog, ul.s-ops a#s-view-dd-trigger {
+  width: 16px;
+  height: 17px;
+  display: block;
+  position: relative;
+}
+
+ul.s-ops a.s-atlas-cog {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/atlasicons.png) transparent no-repeat 0 0;
+}
+
+ul.s-ops a#s-view-dd-trigger {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/extraicons.png) no-repeat 0 -64px;
+}
+
+ul.s-ops a.s-atlas-cog span {
+  position: absolute;
+  visibility: hidden;
+  right: 0;
+}
+
+ul.s-ops a.s-atlas-cog:hover, ul.s-ops a.s-atlas-cog.active {
+  background-position: -25px 0;
+}
+ul.s-ops a#s-view-dd-trigger:hover, ul.s-ops a#s-view-dd-trigger.s-active {
+  background-position: -48px -64px;
+}
+ul.s-ops a#s-view-dd-trigger.s-view-adjusted, ul.s-ops a#s-view-dd-trigger.s-active.s-view-adjusted {
+  background-position: -32px -64px;
+}
+
+.s-inline-dialog, .s-inline-dialog input {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.s-uioptions-dialog, .s-uioptions-dialog input {
+  vertical-align: top;
+}
+
+.s-inline-dialog p {
+  margin: 2px 0;
+}
+
+.s-uioptions-dialog input {
+  margin-right: 4px;
+}
+
+.s-uioptions-dialog p.s-uioptions-offset1 {
+  margin-left: 20px;
+}
+
+.s-inline-dialog-header {
+  font-weight: bolder;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+  padding: 6px 8px 5px;
+}
+
+.s-inline-dialog-content {
+  padding: 4px 8px 4px;
+}
+
+.s-inline-dialog-footer {
+  border-top: 1px solid #ddd;
+  padding: 4px 8px 4px;
+  text-align: right;
+}
+
+.s-uid-help {
+  float: left;
+}
+
+.s-uid-help a span {
+  padding-left: 16px;
+  height: 16px;
+  background: transparent url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/atlasicons.png) no-repeat 0 -20px;
+  display: inline-block;
+}
+
+.s-uioptions-dialog .s-disabled, .s-disabled label, .s-disabled #s-uid-defaultname {
+  color: #999;
+}
+
+#s-uid-defaultname {
+  font-weight: bolder;
+}
+
+#s-uid-working-icon {
+  float: right;
+  height: 16px;
+  width: 16px;
+  background: transparent url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/loading.gif);
+  visibility: hidden;
+}
+
+.s-uioptions-dialog p.s-uid-mt {
+  margin-top: 0.5em;
+}
+
+#unstructured-warning {
+  display: none;
+  color: #888;
+  background: #fff;
+  cursor: default;
+  padding: 0 4px;
+  overflow: hidden;
+  font-size: 11px;
+  position: relative;
+  font-family: "segoe ui", helvetica, arial, sans-serif;
+  top: 1px;
+}
+
+#structuremodule.collapsed.s-unstructured #unstructured-warning {
+  display: inline-block;
+}
+
+div.s-editorparams > div {
+  margin: 3px 0 0 0;
+  border-top: 1px solid #ccc;
+  padding: 0 7px;
+}
+
+#structure .s-newp-title {
+  font-family: "segoe ui",helvetica,arial,sans-serif;
+  font-weight: bolder;
+  font-size: 12px;
+  color: #555;
+  margin: 2px 0 2px;
+}
+
+#structure .s-newp-pt .field-group label {
+  display: none;
+}
+
+#structure .s-newp table {
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+  width: 100%;
+}
+#structure .s-newp table td {
+  padding: 2px 8px 2px 0;
+  border: none;
+  border-collapse: collapse;
+  vertical-align: middle;
+  min-height: 25px;
+  height: 25px;
+}
+
+#structure .s-newp-clone input, .gadget #structure.ie .s-newp-clone input {
+  position: relative;
+  top: 2px;
+  left: 1px;
+  margin: 0px 4px 0px 0px;
+}
+
+#structure.ie .s-newp-clone input {
+  top: 0px;
+}
+
+#structure.mac .s-newp-clone input {
+  top: 0;
+  left: 0;
+}
+
+#structure .s-newp-clone {
+  position: relative;
+  overflow: hidden;
+  line-height: 17px;
+}
+
+#structure .s-newp-cbl {
+  position: absolute;
+  line-height: 17px;
+  font-size: 12px;
+}
+#structure .s-newp-clone-key {
+  font-family: "segoe ui",helvetica,arial,sans-serif;
+  font-weight: bolder;
+  color: #444;
+}
+
+.s-newp-new {
+  margin-top: 0.6em;
+}
+.s-newp-pt.s-disabled {
+  color: #888;
+}
+#structure .s-newp-pt .aui-ss, #structure .s-newp-pt .aui-ss-field {
+  width: 200px;
+}
+
+.s-newp-pt-err {
+  font-style: italic;
+  color: #966;
+}
+
+#structure .s-newp-pt.s-loading td div {
+  display: none;
+}
+
+#structure .s-newp-pt.s-loading td div.s-newp-wait {
+  display: block;
+}
+
+.s-newp-wait {
+  display: none;
+  position: relative;
+  padding-left: 3px;
+  height: 15px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/field-loader.gif) 0 0 no-repeat;
+}
+
+#s-info-dialog-contents {
+  padding: 0.3em 0.8em;
+  font-family: "segoe ui",helvetica,arial,sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#s-info-dialog-contents ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#s-info-dialog-contents ul ul {
+  margin-left: 1em;
+}
+
+#s-info-dialog-contents li {
+  margin: 0;
+  padding: 0;
+}
+
+#s-info-dialog-contents li.s-section {
+  margin-top: 0.5em;
+}
+#s-info-dialog-contents li.s-section > div {
+  color: #666;
+  font-style: italic;
+  margin-left: 1em;
+  margin-bottom: 0.2em;
+}
+#s-info-dialog-contents li.s-section > span {
+  font-weight: bolder;
+  color: #222;
+}
+
+#s-info-dialog-contents .s-info-version {
+  font-weight: bolder;
+  color: #222;
+  margin-bottom: 0.8em;
+}
+
+#s-info-dialog-contents .s-info-footer {
+  margin-top: 1em;
+  font-size: 10px;
+  font-weight: bolder;
+  color: #aaa;
+}
+
+#s-license-warning {
+  float: right;
+  color: #cd0a0a;
+  font-weight: bolder;
+}
+
+#s-license-warning span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) no-repeat 0 -143px;
+}
+
+#tt_use_structure {
+  margin: -4px 0 8px 0;
+}
+
+.tt_no_non_structure {
+  color: #666;
+}
+
+#s-view-dd {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  border-collapse: separate;
+  max-width: 320px;
+  min-width: 320px;
+  white-space: normal;
+}
+
+.s-view-dd-top {
+  background-color: #eaeaea;
+}
+
+.s-view-dd-current {
+  padding: 3px 8px 4px;
+  font-weight: bolder;
+}
+
+.s-view-dd-stripes > div {
+  border-top: 1px solid #ddd;
+  padding: 3px 8px 4px 9px;
+  font-family: "segoe ui",helvetica,arial,sans-serif;
+  font-size: 11px;
+}
+
+#s-view-dd .s-view-dd-stripes input {
+  font-family: "segoe ui",helvetica,arial,sans-serif;
+  font-size: 11px;
+}
+
+span.s-view-dd-stripe-actions {
+  padding-left: 8px;
+}
+
+span.s-view-dd-stripe-actions > span {
+  color: #888;
+}
+span.s-view-dd-stripe-actions > span:after {
+  content: '  ';
+}
+span.s-view-dd-stripe-actions > span:before {
+  content: '  ';
+}
+span.s-view-dd-stripe-actions > a {
+  white-space: nowrap;
+}
+
+.s-view-dd-current-name {
+  font-weight: bold;
+}
+
+.s-view-dd-controls {
+  border-top: 1px solid #bbb;
+  padding: 4px 8px 5px 7px;
+  position: relative;
+}
+.s-view-dd-controls > div {
+  margin-top: 2px;
+}
+.s-view-dd-controls label {
+  color: #777;
+}
+div.s-view-dd-progress {
+  position: absolute;
+  right: 1px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  padding: 2px;
+}
+div.s-view-dd-progress .st-progress-icon {
+  display: inline-block;
+}
+
+#s-view-dd input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+#s-view-dd input {
+  line-height: normal;
+}
+
+#s-view-dd input[type="submit"], #s-view-dd input[type="button"] {
+  padding: 1px 7px 2px;
+}
+
+.s-view-dd-preview span {
+  position: relative;
+  top: 1px;
+}
+
+#s-view-dd .s-view-dd-menu ul {
+  list-style: none;
+  margin: 4px 0;
+  padding: 0;
+}
+
+#s-view-dd .s-view-dd-menu ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#s-view-dd .s-view-dd-menu ul li a {
+  padding: 4px 7px;
+  display: block;
+  text-decoration: none;
+  color: #454545;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#s-view-dd .s-view-dd-menu ul li.s-view-adjusted a:after {
+  content: '*';
+}
+span.s-adjusted-mark, #s-view-dd .s-view-dd-menu ul li.s-view-adjusted a:after {
+  color: #2e83ff;
+  font-family: "segoe ui", helvetica, arial, sans-serif;
+  font-size: 17px;
+  font-weight: bolder;
+  line-height: 10px; /* otherwise the main line gets high */
+  cursor: default;
+}
+
+#s-view-dd .s-view-dd-menu ul li.s-view-adjusted.s-hover a:after {
+  color: #fff;
+}
+
+#s-view-dd .s-view-dd-menu ul li.s-hover {
+  background-color:#3b73af;
+  color:#fff;
+}
+#s-view-dd .s-view-dd-menu ul li.s-hover a {
+  color:#fff;
+}
+
+.s-view-dd-menu > div.s-view-list {
+  border-top: 1px solid #ddd;
+}
+.s-view-dd-menu > div.s-view-list:first-child {
+  border-top-color: #bbb;
+}
+.s-view-dd-actions {
+  border-top: 1px solid #bbb;
+}
+span.s-view-dd-notfound {
+  color: #802c2c;
+  padding-left: 0.25em;
+}
+
+.s-view-list > div {
+  font-weight: bold;
+  padding: 4px 7px 0;
+}
+
+#s-board-options {
+  float: right;
+  /* VAlign text in buttons with the structure name */
+  position: relative;
+  top: 2px;
+}
+
+#s-board-options > div {
+  position: relative;
+  float: left;
+  margin-left: 7px;
+}
+
+#s-view-dd-container {
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  top: 100%;
+}
+
+#s-board-options button.s-board-option {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 3px 7px 3px 7px;
+  text-decoration: none;
+}
+
+#s-board-options button.s-board-option.st-disable {
+  /* Fix older AUI bug — could "press" a disabled button, not present in ADG 1.4 */
+  box-shadow: none;
+}
+
+button.s-board-option span.s-icon {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/extraicons.png) no-repeat;
+  height: 16px;
+  padding-left: 16px;
+}
+
+#s-board-options a.s-no-bganim.s-board-option:hover, #s-board-options a.s-no-bganim.s-board-option.s-active {
+  background-color:#3b73af;
+  color:#fff;
+}
+
+#s-issueDetails-menu-trigger {
+  /* Override AUI's "important" rule to make the button narrower  */
+  padding-right: 20px !important;
+}
+
+#s-issueDetails-menu-trigger:after {
+  margin-left: -15px;
+}
+
+#s-issueDetails-menu-trigger.st-disable:after {
+  border-top-color: #C5C5C5;
+}
+
+#s-issueDetails-menu {
+  z-index: 100;
+}
+
+#s-view-dd-trigger span.s-icon {
+  background-position: 0 -64px;
+}
+
+#s-view-dd-trigger span.s-adjusted-mark {
+  visibility: hidden;
+}
+#s-view-dd-trigger.s-view-adjusted span.s-adjusted-mark {
+  visibility: visible;
+}
+div.s-view-dd-stripe span.s-adjusted-mark {
+  position: relative;
+  top: 3px;
+}
+
+/* Style the triangle icon after AJS Dropdown2 */
+#s-board-options .s-board-option span.s-dd {
+  border: 4px solid transparent;
+  border-top-color: #333333;
+  position: relative;
+  top: 11px;
+  margin-left: 1px;
+  margin-right: 4px;
+}
+
+#s-manage-views .dialog-components {
+  top: 0;
+  height: 490px;
+  width: 100%;
+  position: absolute;
+}
+#s-manage-views {
+  height: 490px;
+}
+#s-manage-views .field-group .checkbox {
+  padding-left: 0;
+}
+.s-manageview-list {
+  margin-top: 1em;
+  border-top: 1px solid #69c;
+}
+div.s-manage-view {
+  border-bottom: 1px solid #ddd;
+  padding: 4px 8px 4px 8px;
+  clear: both;
+}
+.s-manage-viewlist-empty {
+  padding: 4px 8px 4px 8px;
+}
+.s-manage-view.s-active {
+  background-color: #EAF1FD;
+}
+div.s-manage-view .s-name {
+  padding-left: 40px;
+}
+div.s-manage-view .s-description {
+  color: #666;
+  padding-left: 40px;
+  margin-bottom: 0.4em;
+}
+div.s-manage-view span.s-sharing, div.s-manage-view span.s-current-icon {
+  display: inline-block;
+  color: #666;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 1px;
+}
+div.s-manage-view span.s-sharing {
+  margin-right: 8px;
+}
+div.s-manage-view span.s-current-icon {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_454545_256x240.png) no-repeat -64px -142px;
+  margin-left: -40px;
+}
+div.s-manage-view span.s-current-icon.s-notcurrent {
+  visibility: hidden;
+}
+.s-manage-view .s-sharing.s-shared {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/atlasicons.png) no-repeat -16px -74px;
+}
+.s-manage-view .s-sharing.s-public {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/atlasicons.png) no-repeat 1px -74px;
+}
+.s-manage-view .s-current {
+  margin-right: 2em;
+}
+.s-manage-view .s-current > span {
+  color: #999;
+  font-style: italic;
+}
+div.s-manage-view div.s-view-details {
+  text-align: right;
+  visibility: hidden;
+  float: right;
+  margin: 0.6em 0 0;
+}
+div.s-manage-view.s-active div.s-view-details {
+  visibility: visible;
+}
+#s-manage-views table {
+  border-collapse: collapse;
+  padding: 0;
+  border-spacing: 0;
+  width: 100%;
+}
+#s-manage-views table th, #s-manage-views table td {
+  text-align: left;
+  vertical-align: top;
+}
+.s-view-det-top {
+  margin: 0 0 1em 7px;
+}
+.s-view-det-top td {
+  padding: 0 4px;
+}
+.s-view-det-name {
+  font-weight: bold;
+}
+.s-view-det-description {
+  color: #666;
+}
+.s-view-det-back-btn {
+  float: left;
+  margin-left: 10px;
+}
+#s-manage-views .s-view-selection-page .dialog-page-menu {
+  width: 18%;
+  margin: 0;
+}
+#s-manage-views .s-view-selection-page .dialog-panel-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+.s-view-abovelist {
+  padding: 0 10px;
+  font-family: "segoe ui", helvetica, arial, sans-serif;
+}
+.s-perm-arrow {
+  padding-left: 16px;
+  height: 16px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_888888_256x240.png) -32px -16px no-repeat;
+}
+.s-subject-add {
+  margin-left: 5px;
+}
+.s-perm-remove > span {
+  padding-left: 20px;
+}
+a.s-perm-remove {
+  display: inline-block;
+  text-indent: -9999px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/atlasicons.png) -20px -94px no-repeat;
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  text-decoration:none;
+  margin-left: 4px;
+}
+.s-perm-list {
+  margin-bottom: 0.5em;
+}
+.s-perm-list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.s-perm-list ol li {
+  margin-bottom: 0.2em;
+}
+.s-unresolved-entity {
+  color: #888;
+}
+.s-perm-marker {
+  font-weight: bolder;
+}
+li.s-perm-list-default {
+  color: #888;
+}
+div.s-perm-add {
+  margin: -0.2em 0 0;
+}
+div.s-view-det-msg {
+  background: #eee;
+  padding: 0.25em 2em;
+  margin-bottom: 1em;
+}
+div.s-view-det-msg a {
+  margin: 0 0.6em;
+}
+div.s-view-perm-uneditable textarea {
+  color:#888;
+}
+.s-view-spec-error > span {
+  color: #800;
+  margin-right: 2em;
+}
+div.s-view-assoc-loading {
+  position: relative;
+}
+div.s-view-assoc-loading > div {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -8px;
+}
+#s-manage-views #s-view-associations table {
+  width: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#s-manage-views #s-view-associations table td, #s-manage-views #s-view-associations table th {
+  padding: 0 1.5em 0 0;
+}
+div.s-assoc-manage {
+  margin-bottom: 0.5em;
+}
+a.s-newwindow span {
+  padding-right: 16px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_888888_256x240.png) no-repeat -48px -80px;
+  visibility: hidden;
+}
+a.s-newwindow:hover span, a.s-newwindow:active span, a.s-newwindow:focus span {
+  visibility: visible;
+}
+div.s-view-delete {
+  margin-left: 2em;
+}
+div.s-manageview-search {
+  margin-top: 1em;
+}
+#s-manage-views img.s-avatar {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+#s-manage-views span.s-view-det-user {
+  margin-left: 24px;
+}
+body.s-viewdialog-shown div.aui-inline-dialog {
+  z-index: 5000;
+}
+#s-view-advanced textarea {
+  font-size: 11px;
+  font-family: Courier New, monospace;
+  white-space: pre;
+}
+#s-view-advanced textarea.s-view-spec-adjusted {
+  color:#888;
+}
+
+ul.s-ops {
+  background-color: white;
+  float: right;
+  margin: 3px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul.s-ops > li {
+  display: block;
+  float: left;
+  white-space: nowrap;
+  margin: 0 0 0 4px;
+  position: relative;
+}
+#structuremodule.collapsed .s-hide-if-collapsed {
+  display: none;
+}
+
+#st-gh-tab-content #structure .s-gh-hide {
+  display: none;
+}
+
+#s-structure-fixed-empty .st-tb {
+  position: relative;
+}
+
+#s-structure-fixed-empty .st-tbi {
+  position: absolute;
+}
+
+#s-structure-fixed-empty .st-tbt {
+  padding-left: 16px;
+}
+
+.ghx-tab-com-almworks-jira-structure-greenhopper-tab > strong > span {
+  position: relative;
+  top: -1px;
+}
+.s-g-warn-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 16px;
+  width: 16px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_cd0a0a_256x240.png) no-repeat -16px -144px;
+}
+
+.s-foot-selected {
+  color: #454545;
+  font-weight: bolder;
+}
+.s-foot-restore {
+  font-weight: bolder;
+}
+
+.s-i-loading-failed {
+  color: #999;
+  font-style: italic;
+}
+
+#structure-helper-panel {
+  display: none !important;
+}
+
+.st-col-edit {
+  padding: 1px 5px;
+}
+
+.st-col-edit form.aui div.checkbox {
+  padding-left: 0;
+}
+
+.st-col-edit .st-col-buttons {
+  margin-top: 5px;
+  border-top: 1px solid #ccc;
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+
+.st-col-edit .st-col-drag {
+  position: relative;
+  padding-left: 11px;
+}
+
+.st-col-edit .st-col-drag-handle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 11px;
+  cursor: move;
+}
+
+.st-col-edit .st-col-drag-icon {
+  width: 5px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -4px;
+  margin-left: -3px;
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/ui-icons_888888_256x240.png) no-repeat -134px -36px;
+}
+
+form.aui.s-short-label .field-group,
+form.aui.s-short-label .group,
+form.aui.s-short-label .date-select,
+form.aui.s-short-label .buttons-container {
+  padding-left: 90px;
+}
+form.aui.s-short-label .field-group > label {
+  margin-left: -90px;
+  width: 75px;
+}
+form.aui.s-short-label legend > span {
+  width: 75px;
+}
+form.aui.s-short-label .group .field-group,
+form.aui.s-short-label .date-select .field-group {
+  padding-left: 0;
+}
+
+form.aui div.checkbox label, form.aui div.radio label {
+  color: #333;
+}
+
+#structure form.aui.s-form-12px,
+#structure form.aui.s-form-12px input
+#structure form.aui.s-form-12px textarea {
+  font-size: 12px;
+}
+
+#structure form.aui.s-form-12px .text,
+#structure form.aui.s-form-12px .password,
+#structure form.aui.s-form-12px .select {
+  height: 24px;
+}
+#structure.safari form.aui.s-form-12px .text,
+#structure.safari form.aui.s-form-12px .password,
+#structure.safari form.aui.s-form-12px .select {
+  height: 23px;
+  padding-bottom: 3px;
+}
+#structure.ie form.aui.s-form-12px .text,
+#structure.ie form.aui.s-form-12px .password,
+#structure.ie form.aui.s-form-12px .select {
+  padding-top: 3px;
+}
+
+#structure.webkit form.aui.s-form-12px .field-group > label,
+#structure.mozilla form.aui.s-form-12px .field-group > label,
+#structure.ie8 form.aui.s-form-12px .field-group > label {
+  padding-top: 4px;
+}
+#structure.safari form.aui.s-form-12px .field-group > label,
+#structure.mozilla.mac form.aui.s-form-12px .field-group > label {
+  padding-top: 3px;
+}
+
+#structure form.aui.s-form-12px div.checkbox,
+#structure form.aui.s-form-12px div.radio {
+  margin-top: 1px;
+}
+#structure.webkit.mac form.aui.s-form-12px div.checkbox,
+#structure.webkit.mac form.aui.s-form-12px div.radio {
+  margin-top: 3px;
+}
+#structure.mozilla.mac form.aui.s-form-12px div.checkbox,
+#structure.mozilla.mac form.aui.s-form-12px div.radio,
+#structure.safari.mac form.aui.s-form-12px div.checkbox,
+#structure.safari.mac form.aui.s-form-12px div.radio {
+  margin-top: 2px;
+}
+
+#structure form.aui.s-form-12px div.checkbox input[type="checkbox"],
+#structure form.aui.s-form-12px div.radio input[type="radio"] {
+  position: relative;
+  top: 2px;
+}
+#structure.mac form.aui.s-form-12px div.checkbox input[type="checkbox"],
+#structure.mac form.aui.s-form-12px div.radio input[type="radio"] {
+  position: static;
+  top: auto;
+}
+
+#structure .st-col-opt-custom .st-col-opt-header {
+    font-weight: bold;
+    color: #707070;
+    font-size: 13px;
+    width: 150px;
+    text-align: left;
+    padding-top: 10px;
+}
+
+#structure .st-col-progress-statushist {
+    overflow-x: hidden;
+    max-width: 210px;
+}
+
+#structure .st-col-progress-statushist .st-sth-row {
+    clear:both;
+    padding-top: 4px;
+    min-width: 190px;
+}
+
+#structure .st-col-progress-statushist img {
+    float:left;    
+    padding-top: 4px;
+}
+
+#structure .st-col-progress-statushist .st-sth-name {
+    float:left;    
+    max-width:100px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#structure .st-col-progress-statushist .st-sth-input  {
+    float:right;
+    position: relative;
+}
+
+#structure .st-col-progress-statushist input {
+    width: 25px;
+    padding-right: 13px;
+    text-align: right;
+    height: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #ccc;
+    margin:0px;
+    line-height:15px;
+}
+
+#structure .st-col-progress-statushist .st-sth-input span  {
+    position: absolute;
+    right: 2px;
+    color: #999;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 15px;
+    line-height:15px;
+    padding-top:3px;
+    padding-bottom:3px;
+    border: 1px solid transparent;
+    top:0;
+    bottom: 0;
+}
+
+#structure .st-col-progress-statushist a.st-tb {
+    float: right;
+    height: 21px;
+    width: 20px;
+    margin-left:1px;
+    top:0px;
+}
+
+#structure .st-col-progress-statushist-adder {
+    margin-top: 4px;
+}
+
+#structure .st-col-progress-faketimeweight {
+    padding-top: 4px;
+}
+
+li.aui-list-item-li-all-sub-tasks-are-equal a.aui-list-item-link,
+li.aui-list-item-li-time-estimate a.aui-list-item-link
+{
+    color: #707070;
+}
+
+.s-persp-success-title {
+  margin: 0.6em 0;
+  font-weight: bold;
+}
+
+.s-persp-link {
+  width: 420px;
+  padding: 2px 4px;
+  margin: 0;
+}
+
+.s-persp-success-desc {
+  color: #777;
+  margin: 0.6em 0;
+}
+
+.s-persp-error-title {
+  margin: 0.6em 0;
+  font-weight: bold;
+  color: #800;
+}
+
+.s-persp-error-msg {
+  margin-bottom: 0.6em;
+}
+
+#structure .s-editbuttons > a.s-editor-dialog {
+  visibility: visible;
+  padding-top: 3px;
+  float:left;
+}
+
+#structure .s-editbuttons > span.s-editor-right {
+  float:right;
+}
+
+#st-create-buttons {
+  float: left;
+  font-size: 0;
+  padding-left: 10px;
+}
+
+#st-create-nostruct {
+  display: inline-block;
+  padding: 5px 10px;
+  vertical-align: baseline;
+  font-size: 14px;
+}
+
+#st-issue-details {
+  /**
+   * Position issue details "on top" of structure panels, docked to the right.
+   * Note that this element is added as a following sibling of structure widget div, so we assume that 
+   * structure widget div's parent's right border coincides with that of the structure widget's.
+   * The layout will be broken if widget receives right margin, or its parent right padding.
+   * @see .structureBorder 
+   * @see #structure
+   */
+  position: absolute;
+  right: 0;
+ 
+  /** Copied from #structure .main */
+  min-height: 58px;
+  
+  background-color: white;  
+  
+  /** Normally, this border is drawn by .sechead, but we don't have one, so we draw it ourselves */
+  border-top: 1px solid #BBBBBB;
+  /** 
+   We set top position the same as for `#structure .main`. 
+   But .main does not draw the top border, so it starts 1 px lower than we need => adjust 1 px higher;
+   and for our border, we need to adjust for its thickness => adjust 1 more px higher.
+  */
+  margin-top: -2px;
+  
+  /** Same z-index as for #structure so that the widget is not displayed above and does not steal the mouse events. */
+  z-index: 10;
+  
+  /* Avoid duplicate focus indication */
+  outline: none;
+}
+
+/**
+ * This rule is copied from issuenav.css (JIRA@6.0) to make issue details header appear like on the Issue Navigator
+ */
+#st-issue-details .issue-header-content > .command-bar {
+  border-top: none;
+}
+
+#st-issue-details .issue-header {
+  background-color: white;
+}
+
+#st-issue-details.st-focused .st-issue-details-focus-decoration { 
+  visibility: visible;
+}
+
+#st-issue-details .st-issue-details-focus-decoration {
+  visibility: hidden;
+
+  position: absolute;
+  z-index: 108;
+  left: 0;
+  bottom: 0;
+  top: 0;
+
+  width: 4px;
+  overflow: hidden;
+}
+
+#st-issue-details .st-issue-details-focus-decoration > div {
+  position: absolute;
+  left: -1px;
+  height: 100%;
+  box-shadow: -1px 0 4px 4px #92BCF8;
+}
+
+#st-issue-details .st-loading-layer {
+  background: url('/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/wait-large.gif') no-repeat center;
+
+  /* Higher than that for .st-disable-layer */
+  z-index: 108;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  visibility: hidden;
+}
+
+#st-issue-details.st-loading .st-loading-layer {
+  visibility: visible;  
+}
+
+#st-issue-details .st-issue-details-viewport {
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#st-issue-details .st-issue-details-client {
+  position: absolute;
+}
+
+#st-issue-details .st-disable-layer {
+  /* issue details header has z-index 100 */
+  z-index: 104;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  visibility: hidden;
+}
+
+#st-issue-details.st-opaque .st-disable-layer {
+  background-color: white;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+#st-issue-details.st-disable .st-disable-layer {
+  visibility: visible;
+}
+
+#st-issue-details.st-no-selection .st-issue-details-viewport {
+  display: none;
+} 
+
+#st-issue-details .st-issue-details-stub {
+  margin: 10px;
+  display: none;
+}
+
+#st-issue-details.st-no-selection .st-issue-details-stub {
+  display: block;
+}
+
+.s-structure-projectnav-icon {
+  background: url(/jira/s/en_US9zu68z/6340/156/2.11.1.jira6/_/download/resources/com.almworks.jira.structure:widget-bare/img/structure-projectnav.svg) no-repeat;
+}
+
+.s-show-on-dnd {
+  visibility: hidden;
+  transition: visibility 0.1s;
+}
+body.attachments-drop-zone__window-dragover .s-show-on-dnd {
+  visibility: visible;
+  transition-duration: 0s;
+}
+

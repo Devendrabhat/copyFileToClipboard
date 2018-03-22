@@ -1,0 +1,2 @@
+/* module-key = 'com.atlassian.auiplugin:internal-aui-widget', location = 'js/internal/widget.js' */
+(function(A){AJS._internal=AJS._internal||{};AJS._internal.widget=function(C,B){var D="_aui-widget-"+C;return function(J,H){var E;var F;if(A.isPlainObject(J)){F=J}else{E=J;F=H}var G=E&&A(E);var I;if(!G||!G.data(D)){I=new B(G,F||{});G=I.$el;G.data(D,I)}else{I=G.data(D)}return I}}}(AJS.$));

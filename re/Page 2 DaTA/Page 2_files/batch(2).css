@@ -1,0 +1,64 @@
+/* module-key = 'com.onresolve.jira.groovy.groovyrunner:bh-issuePluginResources', location = 'css/client-val.css' */
+ 
+/* GENERAL ERROR */
+.invalid {
+    /* TODO: use correct context if we decide to use these images */
+    /*background: #FFFFFF url(/images/icons/emoticons/error.gif) no-repeat scroll 99.3% 2.2px;*/
+    border: 1px solid red!important;
+    padding: 1px 1px 3px 1px;
+}
+
+.tabinvalid {
+    color: red;
+}
+
+/* REQUIRED */
+.clientrequired {
+    /*background: #FFFFFF url(/images/icons/emoticons/warning.gif) no-repeat scroll 99.3% 2.2px;*/
+    border: 1px solid orange!important;
+    padding: 1px 1px 3px 1px;
+}
+
+/* READONLY */
+.clientreadonly {
+    background: #ECE9D8;
+    border: 1px solid #7F9DB9;
+}
+
+/* OK */
+.clientok {
+    /*background: #FFFFFF url(/images/icons/emoticons/check.gif) no-repeat scroll 99.3% 2.2px;*/
+    border: 1px solid #32b900 !important;
+    padding: 1px 1px 3px 1px;
+}
+
+/* the overlayed element */
+.simple_overlay { 
+
+    /* must be initially hidden */
+    display:none;
+    width:500px;
+    /*height:20px;*/
+    padding:15px;
+    text-align:left;
+    border:2px solid #333;
+
+    background-color:#FFF;
+
+    opacity:0.8;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-box-shadow: 0 0 50px #ccc;
+    -webkit-box-shadow: 0 0 50px #ccc;
+}
+
+/* close button positioned on upper right corner */
+.simple_overlay .close {
+    background-image:url(/jira/s/en_US9zu68z/6340/156/3.0.16/_/download/resources/com.onresolve.jira.groovy.groovyrunner:bh-issuePluginResources/button-close.png);
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}

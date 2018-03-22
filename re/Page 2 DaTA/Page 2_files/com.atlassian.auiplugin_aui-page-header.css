@@ -1,0 +1,17 @@
+/* module-key = 'com.atlassian.auiplugin:aui-page-header', location = '/less/aui-page-header.less' */
+
+.aui-page-header-inner{border-spacing:0;-moz-box-sizing:border-box;box-sizing:border-box;display:table;table-layout:auto;width:100%;}
+.aui-page-header-image,.aui-page-header-main,.aui-page-header-actions{-moz-box-sizing:border-box;box-sizing:border-box;display:table-cell;margin:0;padding:0;text-align:left;vertical-align:top;}
+.aui-page-header-image{white-space:nowrap;width:1px;}
+.aui-page-header-main{vertical-align:middle;}
+.aui-page-header-image+.aui-page-header-main{padding-left:10px;}
+.aui-page-header-actions{padding-left:20px;text-align:right;vertical-align:middle;}
+.aui-page-header-main>h1,.aui-page-header-main>h2,.aui-page-header-main>h3,.aui-page-header-main>h4,.aui-page-header-main>h5,.aui-page-header-main>h6{margin:0;}
+.aui-page-header-actions>.aui-buttons{margin:5px 0;vertical-align:top;white-space:nowrap;}
+.aui-page-header-image .aui-avatar{vertical-align:top;}
+.aui-page-header-hero .aui-page-header-main h1,.aui-page-header-hero .aui-page-header-main h2{font-size:48px;line-height:1.25;margin-top:40px;}
+.aui-page-header-hero .aui-page-header-main p{font-size:24px;line-height:1.458333333333333;margin-top:10px;padding-bottom:50px;}
+.aui-page-header-marketing .aui-page-header-main h1,.aui-page-header-marketing .aui-page-header-main h2{color:#205081;font-size:36px;line-height:1.388888888888889;margin-top:60px;}
+.aui-page-header-marketing .aui-page-header-main p{font-size:20px;color:#707070;line-height:1.5;}
+.aui-page-header-hero .aui-page-header-main h1 .aui-lozenge,.aui-page-header-hero .aui-page-header-main h2 .aui-lozenge,.aui-page-header-marketing .aui-page-header-main h1 .aui-lozenge,.aui-page-header-marketing .aui-page-header-main h2 .aui-lozenge{margin:0 0 0 10px;position:relative;top:-3px;}
+
