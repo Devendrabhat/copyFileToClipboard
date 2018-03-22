@@ -24,7 +24,7 @@ for a in soup.find_all('a'):
             mailids.add(mainid[0])
 string = ''
 for line in mailids:
-    string = string+line+' '
+    string = string+line+';'
 print(string)
 os.system("echo {} | clip".format(string))
 print("Done, Now do ctrl+v somewhere.")
